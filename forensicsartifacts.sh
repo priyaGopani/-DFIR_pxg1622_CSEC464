@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script will get forensics artifacts for a linux based system
-# Author: Priya Gopani
+# Author:Priya Gopani
 
 
 function getTime(){
