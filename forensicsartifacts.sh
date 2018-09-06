@@ -2,7 +2,6 @@
 # This script will get forensics artifacts for a linux based system
 # Author: Priya Gopani
 
-
 function getTime(){
 	echo "###### System Time ################################################################################################################"
 	tim=$(date +"%T")
