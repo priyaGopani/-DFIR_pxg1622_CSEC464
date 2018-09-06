@@ -17,18 +17,18 @@ function getTime(){
 
 function getOSVersion(){
 	echo "###### Operating System #########################################################################################################"
-    	OS_name=$OSTYPE
-    	kernal=$(uname '-r') 
+    OS_name=$OSTYPE
+    kernal=$(uname '-r') 
   
-    	echo "Operating System: $OS_name"
-    	echo "Kernal Version: $kernal"
-    	echo
+    echo "Operating System: $OS_name"
+    echo "Kernal Version: $kernal"
+    echo
 }
 
 function getHardware(){
 	echo "###### System Hardware #########################################################################################################"
-    	CPU=`uname -p`
-    	RAM=`grep MemTotal /proc/meminfo | awk '{print $2}'`
+    CPU=`uname -p`
+    RAM=`grep MemTotal /proc/meminfo | awk '{print $2}'`
 	Hardrives=$(lsblk '-d')
 	MountSys=$(df '-hT')
 
