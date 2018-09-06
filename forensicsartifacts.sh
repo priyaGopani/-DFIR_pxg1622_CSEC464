@@ -26,7 +26,7 @@ function getOSVersion(){
 }
 
 function getHardware(){
-	echo "###### System Hardware #########################################################################################################"
+    echo "###### System Hardware #########################################################################################################"
     CPU=`uname -p`
     RAM=`grep MemTotal /proc/meminfo | awk '{print $2}'`
 	Hardrives=$(lsblk '-d')
@@ -34,9 +34,9 @@ function getHardware(){
 
     echo "CPU:$CPU"
 	echo
-    echo "RAM:$RAM"
+   	echo "RAM:$RAM"
 	echo
-    echo "Hardrives:"
+   	echo "Hardrives:"
 	echo "$Hardrives"
 	echo
 	echo "List of Mounted Systems:" 
