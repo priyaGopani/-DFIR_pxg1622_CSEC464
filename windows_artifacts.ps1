@@ -153,4 +153,4 @@ echo $seclog | Format-Table
 $backGrnds = Get-AppBackgroundTask
 Get-AppBackgroundTask | Format-Table
 
-Write-Host "---------------------------"Write-Host "---------------------------"
+Write-Host "---------------------------------------------"
